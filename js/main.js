@@ -66,7 +66,6 @@ try {
   function getCurrentDay(date = new Date(), locale = "en-US") {
     return date.toLocaleDateString(locale, { weekday: "long" });
   }
-
   document.getElementById("dayOne").innerHTML = getCurrentDay();
 
   // The rest of the week
