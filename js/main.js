@@ -20,7 +20,10 @@ try {
    const data = await response.json()
    
   //  weather conditions
-   if (data.current.condition.text.toLowerCase().includes("clear")||data.current.condition.text.toLowerCase().includes("sunny")) {
+   if (data.current.condition.text.toLowerCase().includes("sunny")) {
+     weatherIcon.src="images/sunny.gif" 
+   }
+   if (data.current.condition.text.toLowerCase().includes("clear")){
      weatherIcon.src="images/clear.gif" 
    }
    else if (data.current.condition.text.toLowerCase().includes("cloud")||data.current.condition.text.toLowerCase().includes("cloudy")) {
